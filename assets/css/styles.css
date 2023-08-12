@@ -200,13 +200,14 @@ body.dark-theme {
 }
 
 .profile__name {
-  font-size: var(--h2-font-size);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  font-family: 'Roboto Slab';
 
 }
 
 .profile__profession {
-  font-size: var(--h4-font-size);
+  font-size: 20px;
+  font-family: 'Roboto Slab';
 }
 
 .profile__social {
