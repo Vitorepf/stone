@@ -101,7 +101,7 @@ img {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
+/*========== Variables Dark theme 
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
@@ -132,7 +132,7 @@ body.dark-theme {
 .dark-theme::-webkit-scrollbar-thumb:hover {
   background-color: hsl(var(--hue), 8%, 32%);
 }
-
+==========*/
 
 /*========== 
     Color changes in some parts of 
