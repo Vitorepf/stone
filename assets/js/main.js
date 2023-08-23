@@ -1,23 +1,27 @@
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
 
-const tabs=document.querySelectorAll('[data-target]'),
-       tabContents= document.querySelectorAll('[data-content]')
-
-tabs.forEach(tab =>{
+tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        const target=document.querySelector(tab.dataset.target)
+        const target = document.querySelector(tab.dataset.target);
 
-        tabContents.forEach(tc => {
-            tc.classList.remove('filters__active')
-        })
-        target.classList.add('filters__active')
+        // Verifica se o conteúdo alvo já está ativo
+        if (target.classList.contains('filters__active')) {
+            target.classList.remove('filters__active');
+            tab.classList.remove('filter-tab-active');
+        } else {
+            tabContents.forEach(tc => {
+                tc.classList.remove('filters__active');
+            });
+            target.classList.add('filters__active');
 
-        tabs.forEach(t => {
-            t.classList.remove('filter-tab-active')
-        })
-        tab.classList.add('filter-tab-active')
-    })
-})
-
+            tabs.forEach(t => {
+                t.classList.remove('filter-tab-active');
+            });
+            tab.classList.add('filter-tab-active');
+        }
+    });
+});
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 const sr = ScrollReveal({
