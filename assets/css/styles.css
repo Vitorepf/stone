@@ -141,11 +141,6 @@ img {
 }
 
 
-
-.profile__perfil img {
- 
-}
-
 .profile__border {
   border: 3.5px solid black;
   justify-self: center;
@@ -172,6 +167,8 @@ img {
 }
 
 .profile__subtitulo {
+  text-align: justify; /* Adicionado para justificar o texto */
+  text-justify: auto;
   margin: 20px;
   font-family: 'Arial', sans-serif; /* Uma fonte básica como exemplo, considere usar uma fonte personalizada se desejar */
   font-weight: 200; /* Peso médio para dar um pouco mais de destaque */
