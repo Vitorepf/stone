@@ -186,7 +186,6 @@ img{
   justify-content: center;
   column-gap: .75rem;
   padding-top: 2rem;
-  padding-left: 3rem;
 }
 
 .profile__social-link {
@@ -586,7 +585,11 @@ img{
     row-gap: 1rem;
     justify-content: center;
   }
-  
+  .profile__subtitulo {
+    text-align: justify; /* Adicionado para justificar o texto */
+    text-justify: auto;
+  }
+
   .profile__info-group {
     text-align: center;
   }
