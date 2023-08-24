@@ -585,13 +585,10 @@ img{
     row-gap: 1rem;
     justify-content: center;
   }
-  .profile__subtitulo {
-    text-align: justify; /* Adicionado para justificar o texto */
-    text-justify: auto;
-  }
 
-  .profile__info-group {
-    text-align: center;
+  .profile__profession, .profile__subtitulo{
+    text-align: left;
+    display: block;
   }
 }
 
@@ -622,7 +619,6 @@ img{
   .profile {
     padding-top: 4rem;
   }
-  .profile__
 
   .profile__profession {
     margin: 3rem auto;
