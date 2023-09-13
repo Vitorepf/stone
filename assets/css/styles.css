@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -57,12 +58,17 @@
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: 'Montserrat', sans-serif;  /* Adicionado um fallback genérico */
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .3s;
   /* For animation dark mode */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, span, label, input, textarea, button {
+  font-family: 'Montserrat', sans-serif;  /* Isso definirá a fonte Montserrat como padrão */
+  transition: .3s; /* Mantenha esta regra se quiser transições suaves em suas propriedades */
 }
 
 h1,
@@ -161,26 +167,28 @@ img {
 }
 img{
   padding-bottom: 1rem;
+}.profile__profession {
+  color: black;
+  font-size: 25px;
+  margin: 20px;
 }
 
 .profile__profession {
   color: black;
   font-size: 25px;
-  font-family: 'Roboto Slab';
   margin: 20px;
 }
 
 .profile__subtitulo {
-  text-align: justify; /* Adicionado para justificar o texto */
+  text-align: justify; 
   text-justify: auto;
   margin: 20px;
-  font-family: 'Arial', sans-serif; /* Uma fonte básica como exemplo, considere usar uma fonte personalizada se desejar */
-  font-weight: 200; /* Peso médio para dar um pouco mais de destaque */
-  letter-spacing: 1.2px; /* Espaçamento de letras */
-  font-size: 14px; /* Tamanho um pouco menor para compensar o fato de estar em maiúsculas */
-  line-height: 1.5; /* Melhor espaçamento entre linhas se o subtítulo tiver mais de uma linha */
+  font-family: 'Montserrat'; 
+  font-weight: 200; 
+  letter-spacing: 1.2px;
+  font-size: 14px; 
+  line-height: 1.5; 
 }
-
 .profile__social {
   display: flex;
   justify-content: center;
